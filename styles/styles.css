@@ -1,0 +1,100 @@
+:root {
+  --color-primary: hsl(31, 77%, 52%);
+  --color-secondary: hsl(184, 100%, 22%);
+  --color-accent: hsl(179, 100%, 13%);
+  --color-headings: hsl(0, 0%, 95%);
+  --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-paragraphs);
+  font-size: 2rem;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: var(--color-headings);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+footer {
+  color: black;
+}
+
+/* btn */
+.btn {
+  border: solid #fff;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: transparent;
+  color: #fff;
+}
+.btn--primary {
+  color: var(--color-primary);
+}
+.btn--secondary {
+  color: var(--color-secondary);
+}
+.btn--accent {
+  color: var(--color-accent);
+}
+
+/* cards */
+.card {
+  padding: 6.5rem 6rem;
+  margin: 0px auto;
+}
+.card--primary {
+  background: var(--color-primary);
+}
+.card--secondary {
+  background: var(--color-secondary);
+}
+.card--accent {
+  background: var(--color-accent);
+}
+.body__text {
+  margin-bottom: 50px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* container */
+.section__container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 4rem;
+  max-width: 1000px;
+  height: 100vh;
+}
+.attribution {
+  display: none;
+  margin-top: 6rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .section__container {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+  }
+  .attribution {
+    display: block;
+    margin-top: 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
